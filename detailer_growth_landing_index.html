@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detailer Growth Partners — Leads, CRM, Sales Training</title>
+  <meta name="description" content="We help auto detailers scale: profitable Meta ads, custom GHL CRM automation, and weekly sales training to turn leads into paying clients." />
+  <meta property="og:title" content="Detailer Growth Partners" />
+  <meta property="og:description" content="Profitable Meta ads + GHL automation + weekly sales training for auto detailers." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#7BAFD4" />
+
+  <!-- Tailwind CDN (no build needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            carolina: '#7BAFD4',
+            carolinaDark: '#2A6EA6',
+            ink: '#0F172A',
+            muted: '#475569',
+            bg: '#F7FAFC',
+            border: '#E5E7EB',
+          },
+          boxShadow: {
+            soft: '0 8px 24px rgba(15, 23, 42, 0.08)',
+          },
+          borderRadius: {
+            xl2: '1.25rem'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --grid-color: #00000012; }
+    html { scroll-behavior: smooth; }
+
+    /* Subtle animated grid background */
+    .grid-bg {
+      background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
+                        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+      background-size: 24px 24px;
+      animation: grid-drift 30s linear infinite;
+    }
+    @keyframes grid-drift { to { background-position: 24px 24px; } }
+
+    /* Glowing gradient blobs */
+    .blob { filter: blur(48px); opacity: .55; }
+    .blob-1 { background: radial-gradient(closest-side, #7BAFD4, transparent); }
+    .blob-2 { background: radial-gradient(closest-side, #2A6EA6, transparent); }
+    @keyframes floaty { 0% { transform: translateY(0); } 50% { transform: translateY(-14px); } 100% { transform: translateY(0);} }
+
+    /* Reveal on scroll */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .grid-bg { animation: none; }
+      .blob, [data-animate] { animation: none !important; }
+      .reveal { transition: none; opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-bg text-ink selection:bg-carolina/30">
+  <!-- Decorative background layer -->
+  <div aria-hidden class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute -top-20 -right-16 h-64 w-64 rounded-full blob blob-1" style="animation: floaty 12s ease-in-out infinite;"></div>
+    <div class="absolute top-40 -left-20 h-72 w-72 rounded-full blob blob-2" style="animation: floaty 14s ease-in-out infinite;"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-tight text-lg">Detailer <span class="text-carolinaDark">Growth</span> Partners</a>
+      <a href="#book" class="inline-flex items-center justify-center rounded-xl bg-carolina px-4 py-2 text-white font-medium shadow-soft hover:bg-carolinaDark transition">Book My Call</a>
+    </div>
+  </header>
+
+  <main id="top" class="">
+    <!-- Hero -->
+    <section class="relative">
+      <div class="max-w-7xl mx-auto px-4 pt-10 pb-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
+        <div class="reveal">
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">Turn Detailing Into a <span class="text-carolinaDark">Scalable Business</span>.</h1>
+          <p class="mt-3 text-base text-muted">We run profitable Meta ads, automate your lead follow-up with a custom GHL CRM, and train your team weekly to close more clients.</p>
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#book" class="inline-flex items-center justify-center rounded-xl bg-carolina px-5 py-3 text-white font-semibold shadow-soft hover:bg-carolinaDark transition">Book My Call</a>
+            <a href="#benefits" class="inline-flex items-center justify-center rounded-xl border border-border bg-white px-5 py-3 text-ink hover:border-carolina transition">See how it works</a>
+          </div>
+          <p class="mt-3 text-xs text-muted">We’ll never share your info.</p>
+        </div>
+        <div class="relative h-56 md:h-72 lg:h-80 reveal">
+          <!-- Abstract tech pattern -->
+          <svg class="absolute inset-0 h-full w-full" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7BAFD4" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2A6EA6" stop-opacity="0.4"/>
+              </linearGradient>
+            </defs>
+            <g opacity=".9">
+              <circle cx="100" cy="80" r="60" stroke="url(#g1)" stroke-width="2"/>
+              <circle cx="220" cy="180" r="40" stroke="url(#g1)" stroke-width="2"/>
+              <circle cx="360" cy="120" r="70" stroke="url(#g1)" stroke-width="2"/>
+              <circle cx="500" cy="220" r="50" stroke="url(#g1)" stroke-width="2"/>
+              <path d="M40 340 H560" stroke="#2A6EA633" stroke-width="2" stroke-dasharray="6 6"/>
+              <path d="M60 300 H540" stroke="#2A6EA633" stroke-width="2" stroke-dasharray="6 6"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Metrics -->
+    <section id="metrics" class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+          <p class="text-sm text-muted">Revenue Generated</p>
+          <p class="mt-1 text-2xl font-bold">$500K+ </p>
+          <p class="text-sm text-muted">for detailers we partner with</p>
+        </div>
+        <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+          <p class="text-sm text-muted">Leads Delivered</p>
+          <p class="mt-1 text-2xl font-bold">1,200+ </p>
+          <p class="text-sm text-muted">qualified inquiries & bookings</p>
+        </div>
+        <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+          <p class="text-sm text-muted">Shops Scaling</p>
+          <p class="mt-1 text-2xl font-bold">Dozens</p>
+          <p class="text-sm text-muted">growing month over month</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="reveal text-2xl font-bold">Why detailers choose us</h2>
+        <div class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <div class="h-8 w-8 rounded-lg bg-carolina/15 text-carolina flex items-center justify-center">
+              <!-- Gauge Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M12 20a8 8 0 1 1 8-8"/><path stroke-width="1.5" d="M12 12l5-3"/><circle cx="12" cy="12" r="1.25" fill="currentColor"/></svg>
+            </div>
+            <h3 class="mt-3 font-semibold">Run Ads That Actually Work</h3>
+            <p class="mt-1 text-sm text-muted">We script, edit, and manage your Meta ads profitably—built for high-intent detailing clients.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <div class="h-8 w-8 rounded-lg bg-carolina/15 text-carolina flex items-center justify-center">
+              <!-- Shield Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/></svg>
+            </div>
+            <h3 class="mt-3 font-semibold">Never Miss a Lead Again</h3>
+            <p class="mt-1 text-sm text-muted">Your custom GHL CRM automates texts, emails, and follow-up so prospects actually show up.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <div class="h-8 w-8 rounded-lg bg-carolina/15 text-carolina flex items-center justify-center">
+              <!-- Check Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h3 class="mt-3 font-semibold">Close More Clients</h3>
+            <p class="mt-1 text-sm text-muted">Weekly sales training with us sharpens your team’s skills and raises your close rate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section id="trusted" class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+          <p class="text-sm text-muted">Trusted by detailers like</p>
+          <div class="mt-4 grid grid-cols-3 sm:grid-cols-6 gap-4">
+            <!-- Simple logo placeholders -->
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+            <div class="h-8 rounded bg-slate-100 border border-border"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="reveal text-2xl font-bold">What detailers say</h2>
+        <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Card 1 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“We went from 5 inquiries a week to 25+ consistently. These guys know detailers.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Alex • Shop Owner</figcaption>
+          </figure>
+          <!-- Card 2 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“The weekly calls changed everything. My closing rate doubled.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Maria • Mobile Detailer</figcaption>
+          </figure>
+          <!-- Card 3 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“Finally, ads that bring in real clients, not tire-kickers.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Jordan • Detailing Business</figcaption>
+          </figure>
+          <!-- Card 4 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“GHL automation kept my calendar full without me chasing leads.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Sam • Studio Owner</figcaption>
+          </figure>
+          <!-- Card 5 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“They wrote, edited, and scaled our Meta ads—super hands-on.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Taylor • Team Lead</figcaption>
+          </figure>
+          <!-- Card 6 -->
+          <figure class="reveal rounded-2xl border border-border bg-white p-5 shadow-soft">
+            <blockquote class="text-sm">“Results within the first month and still improving.”</blockquote>
+            <figcaption class="mt-3 text-xs text-muted">Chris • Owner-Operator</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="reveal text-2xl font-bold">FAQ</h2>
+        <div class="mt-5 space-y-3">
+          <!-- Item -->
+          <div class="reveal rounded-2xl border border-border bg-white p-4 shadow-soft">
+            <button class="w-full text-left flex items-center justify-between gap-4" aria-expanded="false" aria-controls="faq1">
+              <span class="font-semibold">How fast will I see results?</span>
+              <svg class="shrink-0 h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="faq1" hidden class="mt-2 text-sm text-muted">Most shops start seeing traction in 2–3 weeks as ads optimize and automations kick in.</div>
+          </div>
+          <!-- Item -->
+          <div class="reveal rounded-2xl border border-border bg-white p-4 shadow-soft">
+            <button class="w-full text-left flex items-center justify-between gap-4" aria-expanded="false" aria-controls="faq2">
+              <span class="font-semibold">Do I need tech experience?</span>
+              <svg class="shrink-0 h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="faq2" hidden class="mt-2 text-sm text-muted">No. We set up the CRM, automations, and show you exactly how to use it.</div>
+          </div>
+          <!-- Item -->
+          <div class="reveal rounded-2xl border border-border bg-white p-4 shadow-soft">
+            <button class="w-full text-left flex items-center justify-between gap-4" aria-expanded="false" aria-controls="faq3">
+              <span class="font-semibold">What makes you different?</span>
+              <svg class="shrink-0 h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="faq3" hidden class="mt-2 text-sm text-muted">We don’t just run ads. We help you close sales with weekly training and real scripts.</div>
+          </div>
+          <!-- Item -->
+          <div class="reveal rounded-2xl border border-border bg-white p-4 shadow-soft">
+            <button class="w-full text-left flex items-center justify-between gap-4" aria-expanded="false" aria-controls="faq4">
+              <span class="font-semibold">Can I cancel?</span>
+              <svg class="shrink-0 h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="faq4" hidden class="mt-2 text-sm text-muted">Yes. You’re never locked in—stay because it works.</div>
+          </div>
+          <!-- Item -->
+          <div class="reveal rounded-2xl border border-border bg-white p-4 shadow-soft">
+            <button class="w-full text-left flex items-center justify-between gap-4" aria-expanded="false" aria-controls="faq5">
+              <span class="font-semibold">What if I already run ads?</span>
+              <svg class="shrink-0 h-5 w-5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-width="1.5" d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="faq5" hidden class="mt-2 text-sm text-muted">We’ll audit, improve creative, and rebuild targeting to reduce CPL while lifting bookings.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-8 md:py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="reveal rounded-2xl border border-border bg-white p-6 sm:p-8 shadow-soft flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-bold">Ready to fill your detailing schedule?</h3>
+            <p class="text-sm text-muted mt-1">Let’s map out the ads, automations, and sales scripts together.</p>
+          </div>
+          <a href="#book" class="inline-flex items-center justify-center rounded-xl bg-carolina px-5 py-3 text-white font-semibold hover:bg-carolinaDark transition">Book My Free Call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking / Form -->
+    <section id="book" class="py-8 md:py-12">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="reveal text-2xl font-bold">Book a call</h2>
+        <p class="reveal mt-2 text-sm text-muted">You’ll talk directly with the team: <strong>You (marketer)</strong> & <strong>Mikey (<a class="text-carolina hover:text-carolinaDark" href="https://instagram.com/mikeys_scaling" target="_blank" rel="noreferrer">@mikeys_scaling</a>)</strong>.</p>
+
+        <!--
+          Paste your GHL calendar embed script BELOW, targeting the #ghl-calendar element.
+          Example (replace with your real snippet):
+          <script src="https://link.to/ghl/calendar/embed.js" data-parent="#ghl-calendar"></script>
+        -->
+        <div id="ghl-calendar" class="reveal mt-4 rounded-2xl border border-border bg-white p-4 shadow-soft min-h-[300px] flex items-center justify-center text-muted text-sm">Calendar embed will appear here.</div>
+
+        <!--
+          Paste your GHL form embed script BELOW, targeting the #ghl-form element.
+          Example (replace with your real snippet):
+          <script src="https://link.to/ghl/form/embed.js" data-parent="#ghl-form"></script>
+        -->
+        <div id="ghl-form" class="reveal mt-4 rounded-2xl border border-border bg-white p-4 shadow-soft min-h-[260px] flex items-center justify-center text-muted text-sm">Form embed will appear here.</div>
+
+        <ul class="reveal mt-4 text-sm text-muted list-disc pl-5">
+          <li>Text confirmation & reminders</li>
+          <li>20–30 minute strategy call</li>
+          <li>Bring your goals and questions</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-border py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <p class="text-sm">© 2025 Detailer Growth Partners</p>
+      <nav class="text-sm flex items-center gap-4 text-muted">
+        <a href="#" class="hover:text-ink">Privacy Policy</a>
+        <a href="#" class="hover:text-ink">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver to reveal elements on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+    // Accessible FAQ accordion
+    document.querySelectorAll('#faq button[aria-controls]').forEach((btn) => {
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        panel.hidden = expanded;
+      });
+    });
+
+    // Optional: simple parallax on hero SVG
+    const heroGraphic = document.querySelector('section .relative svg');
+    if (heroGraphic) {
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY * 0.12;
+        heroGraphic.style.transform = `translateY(${y}px)`;
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>
